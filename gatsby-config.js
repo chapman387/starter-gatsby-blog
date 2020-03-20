@@ -1,14 +1,14 @@
 let contentfulConfig
 
-try {
-  // Load the Contentful config from the .contentful.json
-  contentfulConfig = require('./.contentful')
-} catch (_) {}
+// try {
+//   // Load the Contentful config from the .contentful.json
+//   contentfulConfig = require('./.contentful')
+// } catch (_) {}
 
 // Overwrite the Contentful config with environment variables if they exist
 contentfulConfig = {
-  spaceId: contentfulConfig.spaceId,
-  accessToken: contentfulConfig.accessToken,
+  spaceId: "l3mdyamrl7ej",
+  accessToken: "pW6mFJoFJqwO7fqwU-rjlzCBN7CNF7ZiPYOs27oyFHQ",
 }
 
 const { spaceId, accessToken } = contentfulConfig
