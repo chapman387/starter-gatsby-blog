@@ -18,6 +18,7 @@ class BlogPostTemplate extends React.Component {
         </div>
         <div className="wrapper">
           <h1 className="section-headline">{post.title}</h1>
+          <p>{post.whatDayIsIt}</p>
           <p
             style={{
               display: 'block',
@@ -42,6 +43,7 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
+      whatDayIsIt
       publishDate(formatString: "MMMM Do, YYYY")
       heroImage {
         sizes(maxWidth: 1180, background: "rgb:000000") {
